@@ -1,0 +1,22 @@
+{
+  "name": "mod2_vania",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaniaacevedo/mod2_vania.git"
+  },
+  "author": "Vania Acevedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaniaacevedo/mod2_vania/issues"
+  },
+  "homepage": "https://github.com/vaniaacevedo/mod2_vania#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
