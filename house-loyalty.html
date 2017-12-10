@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
-<body data-congress="senate">
+<body data-congress="house">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -53,43 +53,74 @@
         </div>
     </nav>
     <section class="container">
-        <h3>Senators</h3>
-        <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
-        <div id="form">
-            <form name="member-filter" id="FilterForm" action="" method="" class="form-inline">
-                <div class="checkbox">
-                    <h4>Filter by party:</h4>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="partyselector" id="inlineCheckbox1" value="democrats" checked="checked" name="D">Democrats
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" id="inlineCheckbox2" value="republicans" checked="checked" class="partyselector" name="R">Republicans
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" id="inlineCheckbox3" value="independent" checked="checked" class="partyselector" name="I">Independent
-                    </label>
-                </div>
-                <div class="form-group pull-right">
-                    <h4>Filter by state:</h4>
-                    <select class="form-control" id="places">
-                        <option value="" checked="checked">--Select state--</option>
-                    </select>
-                </div>
-            </form>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Party Loyalty</h3>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+            </div>
+            <div class="col-sm-6">
+                <h4>Senate at a glance</h4>
+                <table class="table table-condensed" id="attendance1">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>Number of Representatives</th>
+                            <th>% Voted with Party</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="rep">
+                            <td>Republican</td>
+                            <td class="number">--</td>
+                            <td class="vote">--</td>
+                        </tr>
+                        <tr class="dem">
+                            <td>Democrat</td>
+                            <td class="number">--</td>
+                            <td class="vote">--</td>
+                        </tr>
+                        <tr class="ind">
+                            <td>Independent</td>
+                            <td class="number">--</td>
+                            <td class="vote">--</td>
+                        </tr>
+                        <tr class="tot">
+                            <td>Total</td>
+                            <td class="number">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div id=table>
-            <table class="table table-hover" id="senate-data">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Party</th>
-                        <th>State</th>
-                        <th>Seniority</th>
-                        <th>Votes</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Least Loyal (Bottom 10% Attendance)</h4>
+                <table class="table table-condensed centered" id="loyalB">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Party Votes</th>
+                            <th>% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h4>Most Loyal (Top 10% Attendance)</h4>
+                <table class="table table-condensed centered" id="loyalT">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number of Party Votes</th>
+                            <th>% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
     <nav class="navbar navbar-default navbar-fixed-bottom">

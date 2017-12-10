@@ -1,84 +1,90 @@
 body {
-padding-top: 70px; 
-text-align: justify;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: justify;
+
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Oswald', sans-serif;
 }
 
-.navbar-custom{
-  	background-color:#26777c;
-  
-  	}
+.navbar-default {
+    background-color:#d3e6ed;
+}
+.navbar-fixed-bottom{
+    background-color: #f0f0f0;
+}
 
-.navbar-custom .navbar-nav > li > a {
-    color:white;
+.navbar-default .navbar-nav>li>a {
+    color: #1f507f;
     font-size: 18px;
     margin-right: 10px;
 }
 
-.navbar-header{
-	margin-left: 10px;
-}
-.navbar-custom .navbar-nav > li > a:focus{
-color:#2c6b70;	
+.navbar-header {
+    margin-left: 10px;
 }
 
-.navbar-custom .navbar-nav > li > a:hover{
-	color:#2c6b70;
+.navbar-default .navbar-nav>li>a:focus {
+    color: #3c6a6f;
+    background-color: #D7DADB;
 }
 
-.navbar-brand {
-	color:white;
+.navbar-default .navbar-nav>li>a:active {
+    color: #3c6a6f;
+    background-color: ;
 }
 
-button{
-	border-radius: 6px;
-	padding: 6px;
-	background-color: #d3e6ed;	
-
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: #76c09b;
 }
 
-section a:hover{
-	color:#2c6b70;
-	text-decoration: none;
+.navbar-default .navbar-header>button {
+    color: white;
 }
 
-section a:focus{
-	color:#2c6b70;
-	text-decoration: none;
+section a:hover {
+    color: #48a8dc;
+    text-decoration: none;
 }
 
-
-#form{
-	padding:20px;
+section a:focus {
+    color: #2c6b70;
+    text-decoration: none;
 }
 
-#table{
-	margin-top: 50px;
+#form {
+    padding: 20px;
 }
 
-thead{
-	background-color: #d3e6ed;
-	
+#table {
+    margin-top: 30px;
 }
 
-h2,h3{
-	color:#FC4349;
+thead {
+    background-color: #8cb4da;
+    color: white;
+}
+
+h1 {
+    color: #3c6a6f;
+    font-size: 30px;
+}
+
+h2,
+h3 {
+    color: #48a8dc;
+}
+
+h4 {
+    color: #70bf98;
+}
+
+section img {
+    max-width: 100%;
+    height: auto; 
+    margin:auto;  
     
 }
 
-h4{
-	
-	color:#2c6b70;
-}
 
-img{
-	width: 700px;
-	margin-top: 20px;
-}
-
-#content{
-	margin-left: 30px;
-}
-
-#home{
-	display: flex;
-}
